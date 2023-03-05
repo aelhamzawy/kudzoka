@@ -1,0 +1,387 @@
+* {
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    cursor: url("./images/defualtmousicon.png"), default;
+}
+header{
+    background-image: url("./images/blue_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 118vh;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 80px 0 80px;
+}
+nav a{
+    cursor: url("./images/pointaermousicon.png"), pointer;
+}
+
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: inline-block;
+    width: 150px;
+    margin-right: 40px;
+}
+.left a{
+    display: inline-block;
+    margin-right: 40px;
+    text-decoration: none;
+    color: #91989e;
+    font-weight: 500;
+    position: relative;
+}
+.left a::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #96318d;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    
+}
+
+.left a:hover::after{
+    width: 100%;
+    transition:all 0.7s ;
+    border-radius: 10px;
+}
+.right a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    position: absolute;
+    font-size: 13px;
+}
+
+.right img{
+    width: 85px;
+    cursor: url("./images/pointaermousicon.png"), pointer;
+}
+.right a:hover{
+    color: #5bd3f7;
+    background-color: #fafafa;
+}
+.main-container{
+    position: relative;
+}
+
+.main-container .main-left h1{
+    font-size:3.4em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container .main-left span{
+    color: #96318d;
+}
+.main-container .main-left p{
+    font-size: 25px;
+    font-weight: lighter;
+    line-height: 1.7em;
+}
+.main1-right{
+    position: absolute;
+    right: 40px;
+    top: -50px;
+    
+}
+.main-right{
+    position: relative;
+    width: 600px;
+    height: 800px;
+    overflow: hidden;
+    right: 20px;
+    
+   
+}
+.main-right img{
+    width: 100%;
+    position: absolute;
+    display: block;
+}
+.main-right .landing-bg{
+    width: 700px;
+    top: 20px;
+    right: -100px;
+}
+.main-right .smily-man{
+    width: 300px;
+    right: 130px;
+    top: 50px;
+}
+.main-right .clouds{
+    top: 420px;
+    left: 120px;
+    width: 415px;
+}
+.main-left {
+    padding-top: 140px;
+    padding-left: 80px;
+}
+.wav-pic{
+    position: relative;
+}
+.wav-pic .wave{
+    display: inline-block;
+    width: 1400px;
+    height: 200px;
+    position: absolute;
+    top: 145px;
+    right: 290px;
+}
+.first-sec{
+    position: relative;
+    padding: 10px 100px;
+}
+.line-div{
+    position: absolute;
+    display: inline-block;
+    width: 60em;
+    top: 150px;
+    right: 150px;
+    overflow: hidden;
+}
+.line-div img{
+    width: 100%;
+}
+
+.first-sec div img{
+    display: block;
+    margin: 10px auto;
+    
+}
+.first-sec div h3{
+    color: #757575;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.first-sec div p{
+    font-size: 20px;
+    color: #727272;
+    font-weight: 400;
+    text-align-last: center;
+}
+.timer{
+    position: absolute;
+    right: 450px;
+    top: 370px;
+}
+.timer img, .fast img{
+    width: 200px;
+}
+.first-sec .fast{
+    position: absolute;
+    top: 222px;
+    left: 40px;
+}
+.first-sec div.kudzoka div.kudzoka1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-sec div.kudzoka div.kudzoka1 div.kud-info{
+    position: absolute;
+    top: 90px;
+}
+div.kud-info h6, div.kud-info h3{
+    color:#ffffff;
+}
+div.kud-info h3{
+    font-size: 37px;
+    font-weight: 400;
+}
+div.kud-info h6{
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.first-sec div.kudzoka img{
+    width: 310px;
+}
+.first-sec div.kudzoka{
+    position: absolute;
+    right: 500px;
+    top: 230px;
+}
+div.percentage{
+    position: absolute;
+    right: -350px;
+}
+div.percentage img{
+    width: 230px;
+}
+
+.second-sec{
+    margin-top: 980px;
+}
+.second-sec .main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-sec .main-container .left img, .second-sec .main-container .right img{
+    display: inline-block;
+    width: 160px;
+}
+.second-sec .main-container .middle{
+    width: 510px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+}
+.second-sec .main-container .middle .swiper{
+    width: 100%;
+    position: relative;
+    
+}
+.second-sec .main-container .middle .swiper::after{
+    content: "";
+    position: absolute;
+    border-left: 3px solid #616161;
+    border-bottom: 3px solid #616161;
+    width: 10px;
+    height: 10px;
+    top: -50px;
+    right: 5px;
+    transform: rotate(-135deg);
+}
+.second-sec .main-container .middle .swiper::before{
+    content: "";
+    position: absolute;
+    border-left: 3px solid #616161;
+    border-bottom: 3px solid #616161;
+    width: 10px;
+    height: 10px;
+    left: 5px;
+    top: -50px;
+    transform: rotate(45deg);
+}
+.second-sec .main-container .middle img{
+    display: inline-block;
+    width: 390px;
+}
+.middle-info{
+    width: 350px;
+}
+.middle-info h3{
+    color: #616161;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.middle-info h4{
+    text-align: center;
+    text-align-last: center;
+    color: #959595;
+    font-weight:500;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.second-sec .main-container .middle img{
+    display: inline-block;
+    width: 400px;
+}
+
+footer{
+    position: relative;
+    height:85vh;
+    overflow: hidden;
+}
+
+
+footer img.package{
+    width: 40em;
+    position: absolute;
+    right: 97px;
+    top: 100px;
+}
+
+footer img.footer-bg{
+    position: absolute;
+    display: inline-block;
+    width: 96em;
+    height: 45em;
+    right: -100px;
+    
+}
+footer .main-links{
+    position: absolute;
+    top: 350px;
+    left: 70px;
+}
+footer .pay{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    left: -56px;
+}
+footer .pay .apple{
+    margin: 0 17px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.apple-info h6, .apple-info h5{
+    color: #000;
+    font-weight: 400;
+}
+.apple-info{
+    margin-left: 7px;
+}
+.apple-icon{
+    display: inline-block;
+    width: 23px;
+}
+
+.social-links img{
+    display: inline-block;
+    margin: 25px 10px 0 0;
+    color: #fff;
+}
+.insta, .what{
+    width: 25px;
+}
+.face{
+    width: 15px;
+}
+footer .nav-links{
+    margin-top: 30px;
+}
+footer .nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    display: inline-block;
+    margin-right: 35px;
+}
